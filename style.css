@@ -2,8 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-@base {
+@layer base {
 	body {
 		@apply font-sans;
+		cursor: none;
 	}
+
+	header {
+		mix-blend-mode: difference;
+	}
+}
+
+#cursor {
+	aspect-ratio: 1;
+	border-radius: 50%;
+	width: 0.5rem;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	background-color: white;
+	z-index: 50;
+	/* top: 150px;
+	left: 270px; */
+	mix-blend-mode: difference;
+}
+
+#cursor-shadow {
+	aspect-ratio: 1;
+	border-radius: 50%;
+	width: 2.5rem;
+	position: fixed;
+	transform: translate(-50%, -50%);
+	border: 1px solid white;
+	z-index: 50;
+	top: 150px;
+	left: 270px;
+	mix-blend-mode: difference;
 }

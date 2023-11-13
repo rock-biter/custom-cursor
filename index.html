@@ -6,8 +6,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Vite App</title>
 	</head>
-	<body>
-		<header class="py-4 px-20 fixed top-0 w-full">
+	<body class="bg-white">
+    <div id="cursor"></div>
+    <div id="cursor-shadow"></div>
+		<header class="py-4 px-20 fixed top-0 w-full z-40">
 			<nav class="container flex justify-between">
 				<div class="rounded-full bg-white aspect-square w-6"></div>
 
@@ -28,10 +30,10 @@
 			</section>
 
 			<section class="min-h-screen px-20 flex items-center pb-40">
-				<div class="container flex flex-col gap-20">
+				<div class="container flex flex-col gap-40">
 					<img
 						src="/building.jpg"
-						class="aspect-[9/12] -mt-80 max-w-sm object-cover self-end"
+						class="aspect-[9/12] -mt-60 max-w-md object-cover self-end"
 						alt=""
 					/>
 
@@ -42,7 +44,41 @@
 
 						<a href="#" class="block text-base underline mt-6">read more</a>
 					</p>
+
+					<div class="flex flex-wrap gap-10">
+						<img
+							src="/lost-place-01.jpg"
+							class="aspect-[9/12] max-w-sm object-cover"
+							alt=""
+						/>
+
+						<img
+							src="/lost-place-02.jpg"
+							class="aspect-square max-w-sm -mb-20 object-cover self-end"
+							alt=""
+						/>
+
+						<img
+							src="/lost-place-03.jpg"
+							class="aspect-[12/8] max-w-sm object-cover"
+							alt=""
+						/>
+					</div>
 				</div>
+			</section>
+
+      <section class="min-h-screen px-20 flex bg-black text-white items-center py-40">
+				<div class="container flex flex-col gap-40">
+
+					<p class="text-3xl max-w-3xl">
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid
+						facilis ex eum id voluptatem eos ratione corrupti quasi, repellat
+						unde sed, vel quibusdam?
+
+						<a href="#" class="block text-4xl font-extralight underline mt-6">info@gianlucalomarco.it</a>
+					</p>
+
+					
 			</section>
 		</main>
 		<script type="module" src="/main.js"></script>
