@@ -45,11 +45,9 @@ function lerp(a, b, t) {
 
 const tween = gsap.to('#counter', {
 	innerText: '728',
-	x: 500,
-	snap: {
-		innerText: 1,
-		x: [],
-	},
-	duration: 2,
+	duration: 1.5,
 	ease: 'power2.out',
+	snap: {
+		innerText: 5,
+	},
 })
