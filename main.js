@@ -2,6 +2,7 @@ import './style.css'
 import '@fontsource/poppins/400.css'
 import '@fontsource/poppins/200.css'
 import '@fontsource/poppins/600.css'
+import { gsap } from 'gsap'
 
 const cursor = document.getElementById('cursor')
 const shadow = document.getElementById('cursor-shadow')
@@ -41,3 +42,14 @@ requestAnimationFrame(update)
 function lerp(a, b, t) {
 	return a * (1 - t) + b * t
 }
+
+const tween = gsap.to('#counter', {
+	innerText: '728',
+	x: 500,
+	snap: {
+		innerText: 1,
+		x: [],
+	},
+	duration: 2,
+	ease: 'power2.out',
+})
