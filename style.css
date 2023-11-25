@@ -6,6 +6,7 @@
 	body {
 		@apply font-sans;
 		cursor: none;
+		overflow-x: hidden;
 	}
 
 	header {
